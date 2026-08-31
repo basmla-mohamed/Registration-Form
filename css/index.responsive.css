@@ -1,0 +1,83 @@
+/*350*/
+@media (max-width: 1300px) {
+#form .photo{
+    width: 30%;
+}
+form{
+    width: 80%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+#search{
+    width: 80%;
+}
+#data{
+    width: 95%;
+}
+}
+
+/*450*/
+@media (min-width: 371px) and (max-width: 1300px) {
+    #search{
+    width: 60%;
+}
+}
+
+/*650*/
+@media (min-width: 577px) and (max-width: 1300px) {
+    #form .photo{
+    width: 20%;
+}
+form{
+    width: 80%;
+    max-width: 350px;
+}
+    #search{
+    width: 50%;
+}
+#data{
+    width: 75%;
+}
+}
+
+/*850*/
+@media (min-width: 769px) and (max-width: 1300px) {
+    #form .photo{
+    width: 15%;
+}
+form{
+    max-width: 400px;
+}
+    #search{
+    width: 40%;
+}
+#data{
+    width: 75%;
+}
+}
+
+/*1050*/
+@media (min-width: 992px) and (max-width: 1300px) {
+    #form .photo{
+    width: 13%;
+}
+form{
+    max-width: 500px;
+}
+    #search{
+    width: 30%;
+}
+#data{
+    width: 85%;
+}
+}
+
+/*large screens*/
+@media (min-width: 1181px) and (max-width: 1300px) {
+    #search{
+    width: 25%;
+}
+#data{
+    width: 90%;
+}
+}

@@ -1,0 +1,136 @@
+/*------------------LOGO-------------------*/
+#form .photo{
+    width: 13%;
+    margin: 0px auto;
+}
+#form .photo img{
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+}
+/*------------------FORM-------------------*/
+form{
+    background: #ada996;
+    background: -webkit-linear-gradient(to right,#eaeaea,#dbdbdb,#f2f2f2,#ada996);
+    background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+    border-radius: 10px;
+    width: 500px;
+    transition-duration: 1s;
+}
+form h3{
+    color: var(--mainColor);
+    margin: 0px auto;
+    display: block;
+    width: fit-content;
+}
+input{
+    outline: none;
+    border: none;
+}
+input:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+form i{
+    color: var(--mainColor);
+}
+#search{
+    width: 25%;
+}
+#search i{
+    color: var(--mainColor);
+}
+form button{
+    transition-duration: 1s;
+}
+form button.submit:hover {
+    background-color: #078148 !important;
+}
+/*------------------TABLE-------------------*/
+#data{
+    width: 75%;
+}
+/*------------------DARK THEME-------------------*/
+#form{
+    position: relative;
+}
+button.darkTheme{
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 0px 20px;
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    background-color: transparent;
+    z-index: 100;
+    background-color: var(--mainColor);
+}
+button.darkTheme::after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    left: -20px;
+    transition-duration: 1s;
+}
+
+button.darkTheme.dark::after{
+    left: 20px;
+}
+form.dark{
+    background: #18191a;
+    transition-duration: .3s;
+}
+
+input.dark {
+    background-color:#262727 ;
+    color: #fff;
+}
+form.dark input::placeholder {
+    color: #ddd4d4;
+}
+form.dark input:focus {
+    background-color:#262727 ;
+    color: #ddd4d4;
+}
+label.dark{
+    background-color:#262727 ;
+}
+#search input.dark{
+    background-color:#262727 ;
+    color: #fff !important;
+
+}
+#search label.dark {
+    background-color: #262727 !important;
+    color: #fff !important;
+}
+#search input.dark::placeholder {
+    color: #ddd4d4;
+}
+tr td.dark,
+tr th.dark {
+    background-color: #262727 !important;
+    color: #ddd4d4;
+}
+table.dark td {
+    background-color: #262727 !important;
+}
+
+table.dark td:not(:last-child) {
+    color: #ddd4d4 !important;
+}
+table.dark th {
+    background-color: #262727 !important;
+    color: #fff !important;
+}
+
+/*------------heighlight tablerow in editing*/
+tr.editing td,
+tr.editing th {
+    background-color: #86bb9e !important;
+}

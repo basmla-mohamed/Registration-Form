@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ****************************META*************************************** -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Basmala">
+    <meta name="keyword" content="">
+    <meta name="" content="">
+    <title>Exercise-05</title>
+        <!--***************************LINKING************************************-->
+    <link rel="stylesheet" href="css/all.css">               <!--icons-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">     <!--Bootstrap-->
+    <link rel="stylesheet" href="css/global.css">             
+    <link rel="stylesheet" href="css/keyframes.css">         <!--Animations-->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.responsive.css">
+    <link rel="icon" href="./images/logo-be01d065.png">
+</head>
+<body>
+    <div id="form" class="d-f flex-column align-items-center justify-content-center m-auto py-5">
+        <div class="dark  w-100 ">
+            <button class="darkTheme"></button>
+        </div>
+        <div class="photo">
+            <img src="./images/logo-be01d065.png" class=" mb-5">
+        </div>
+        <form class=" m-auto px-4 py-4" data-type="add">
+            <h3 class="mb-4">Students System</h3>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="firstName">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+                <input id="firstName" type="text" class="form-control" placeholder="First Name *" aria-label="Username" aria-describedby="basic-addon1" name="firstName" onblur=" checkInputs(this)" data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="firstName" role="alert"></p>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="lastName">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+                <input id="lastName" type="text" class="form-control" placeholder="Last Name" aria-label="Username" aria-describedby="basic-addon1" name="lastName" onblur=" checkInputs(this)" data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="lastName"  role="alert"></p>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="email">
+                    <i class="fa-solid fa-envelope"></i>
+                </label>
+                <input id="email" type="email" class="form-control" placeholder="Email *" aria-label="Username" aria-describedby="basic-addon1" name="email" onblur=" checkInputs(this)" data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="email"  role="alert"></p>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="age">
+                    <i class="fa-solid fa-hashtag"></i>
+                </label>
+                <input id="age" type="number" class="form-control" placeholder="Age *" aria-label="Username" aria-describedby="basic-addon1" name="age" onblur=" checkInputs(this)" data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="age"  role="alert"></p>
+
+            <div class="input-group mb-3">
+                <label class="input-group-text" for="phone">
+                    <i class="fa-solid fa-mobile-button"></i>
+                </label>
+                <input id="phone" type="text" class="form-control" placeholder="Phone" aria-label="Username" aria-describedby="basic-addon1" name="phone" onblur=" checkInputs(this)" data-valid="false">
+            </div>
+            <p class="alert alert-danger d-none" data-error-name="phone"  role="alert"></p>
+
+            <button type="submit" class="submit w-100 border-0 text-light bg-success rounded-2 py-2 mb-2">Add</button>
+            <button type="button" class="reset w-100 border-0 text-light bg-secondary rounded-2 py-2 mb-2" onclick="resetForm()">Reset</button>
+
+        </form>
+        
+    </div>
+    <div id="search" class=" m-auto mb-5">
+        <div class="input-group mb-3">
+            <label class="input-group-text" for="searchInput">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </label>
+            <input id="searchInput" type="text" class="form-control input" name="search" placeholder="Search..." autocomplete="off" data-valid="false">
+        </div>
+    </div>
+    <div id="data" class=" m-auto mb-5">
+        <div class="table-responsive">
+            <table class=" rounded-2 overflow-hidden table table-striped table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Age</th>
+      <th scope="col">Phone</th>
+      <th scope="col">option</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td id="alertWarning" class="table-warning text-center fw-medium d-none" colspan="7">Their are no data</td>
+
+    </tr>
+    
+  </tbody>
+            </table>
+        </div>
+    </div>
+<script src="./js/functions.js"></script>
+<script src="js/index.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
